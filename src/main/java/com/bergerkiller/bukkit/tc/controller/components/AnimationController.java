@@ -68,4 +68,17 @@ public interface AnimationController {
      * @return True if an animation was found and started
      */
     boolean playNamedAnimation(AnimationOptions options);
+
+    /**
+     * Adds the option to select an interpolation interperter.
+     * There will only be two options for this, which will cover most of the types.
+     */
+    switch (options.getPlaybackMode()) {
+        case LINEAR:
+            // Apply linear logic
+            break;
+        case SINE:
+            // Apply sine wave logic
+            break;
+    }
 }
